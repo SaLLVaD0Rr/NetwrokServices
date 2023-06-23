@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
-# Import scapy
-from scapy.all import scapy
+import scapy
+import scapy.all as scapy
 # We need to create regular expressions to ensure that the input is correctly formatted.
 import re
 
 # Basic user interface header
 ###############################
 ###############################
-print(" _____       ___   _       _       _     _       ___   _____   _____   _____    _____   ")
-print("/  ___/     /   | | |     | |     | |   / /     /   | |  _  \ /  _  \ |  _  \  |  _  \  ")
-print("| |___     / /| | | |     | |     | |  / /     / /| | | | | | | | | | | |_| |  | |_| |  ")
-print("\___  \   / / | | | |     | |     | | / /     / / | | | | | | | | | | |  _  /  |  _  /  ")
-print(" ___| |  / /  | | | |___  | |___  | |/ /     / /  | | | |_| | | |_| | | | \ \  | | \ \  ")
-print("/_____/ /_/   |_| |_____| |_____| |___/     /_/   |_| |_____/ \_____/ |_|  \_\ |_|  \_\ ")
-print("                                                                                        ")
+print(" ___________      __._________________________    ___________________   ________  .____       _________")
+print(" /   _____/  \    /  \   \_   _____/\__    ___/    \__    ___/\_____  \  \_____  \ |    |     /   _____/")
+print(" \_____  \\   \/\/   /   ||    __)    |    |         |    |    /   |   \  /   |   \|    |     \_____  \ ")
+print(" /        \\        /|   ||     \     |    |         |    |   /    |    \/    |    \    |___  /        | ")
+print("/_______  / \__/\  / |___|\___  /     |____|         |____|   \_______  /\_______  /_______ \/_______  /")
+print("        \/       \/           \/                                   \/         \/        \/        \/ ")
 ###############################
 ###############################
 
@@ -29,7 +28,7 @@ while True:
 
 
 # Try ARPing the ip address range supplied by the user. 
-# The arping() method in scapy creates a packet with an ARP message 
+# The arping() method in scapy creates a pakcet with an ARP message 
 # and sends it to the broadcast mac address ff:ff:ff:ff:ff:ff.
 # If a valid ip address range was supplied the program will return 
 # the list of all results.
